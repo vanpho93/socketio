@@ -1,0 +1,25 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "Socket io buoi 1 lop 246 17/10",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "socket.io": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanpho93/socketio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanpho93/socketio/issues"
+  },
+  "homepage": "https://github.com/vanpho93/socketio#readme"
+}
