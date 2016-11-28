@@ -3,8 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      var socket = io();
+
+      socket.on("SERVER_GUI_TIN_NHAN", function(data){
+        document.getElementById('list-tin-nhan').innerHTML += `<li>${data}</li>`
+      });
+
+      function gui(){
+        var txt = document.getElementById('txt').value;
+        socket.emit('CLIENT_GUI_TIN_NHAN', txt);
+        document.getElementById('txt').value = '';
+
+      }
+    </script>
   </head>
   <body>
     Hello world
+    <input type="text" id="txt" value="" placeholder="Nhap tin nhan">
+    <button type="button" onclick="gui()">Gui tin nhan</button>
+    <ul id="list-tin-nhan"></ul>
   </body>
 </html>
